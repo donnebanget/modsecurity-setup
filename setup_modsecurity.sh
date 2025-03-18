@@ -51,7 +51,7 @@ git clone https://github.com/SpiderLabs/ModSecurity-nginx
 # Compile the ModSecurity-nginx module
 echo -e "${YELLOW}Compiling ModSecurity-nginx module...${NC}"
 cd nginx-$NGINX_VERSION || exit
-./configure --with-compat --add-dynamic-module=/usr/local/src/cpg/ModSecurity-nginx
+./configure --with-compat --with-openssl=/usr/include/openssl/ --add-dynamic-module=/usr/local/src/cpg/ModSecurity-nginx
 make modules
 cp objs/ngx_http_modsecurity_module.so /usr/share/nginx/modules/
 
