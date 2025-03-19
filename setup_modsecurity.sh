@@ -12,7 +12,7 @@ echo -e "${BLUE}Starting ModSecurity and Nginx setup...${NC}"
 # Update and install dependencies
 echo -e "${YELLOW}Installing required dependencies...${NC}"
 apt-get update
-apt-get install -y libtool autoconf build-essential libpcre3-dev zlib1g-dev libssl-dev \
+apt-get install -y libtool autoconf build-essential libpcre2-dev zlib1g-dev libssl-dev \
 libxml2-dev libgeoip-dev liblmdb-dev libyajl-dev libcurl4-openssl-dev pkgconf libxslt1-dev \
 libgd-dev automake
 
